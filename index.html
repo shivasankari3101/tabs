@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main_header">
+    <header class="header">
+        <h3 class="quiz_title">Quiz title</h3>
+    </header>
+    <div class="tab_container">
+    <div class="tab_header">
+        <div class="tab summary_tab" onclick="showsummary()">Summary</div>
+        <div class="tab questions_tab" onclick="showquestions()">Questions</div>
+        <div class="tab players_tab" onclick="showplayers()">Players</div>
+    </div>
+   </div>
+</div>
+
+   <div class="main_content">
+    <div class="main_div">
+    <div class="summary_tab" style="text-align: center;font-weight: bolder;">Summary</div>
+    <div class="questions_tab" style="text-align: center;font-weight: bolder;">Question</div>
+   <div class="players_tab">   
+    <table >    
+    <tr>    
+    <th>All</th>
+    <th colspan="3">
+      <div class="wrap">
+      <div class="search">
+         <input type="text" class="searchTerm" placeholder="Search">
+         <button type="submit" class="searchButton">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+   </div>   
+   </th>    
+   </tr>   
+   <tr>   
+    <th> </th>   
+    <th>User_name</th>   
+    <th>Rank</th>   
+    <th>Score</th>   
+   </tr> 
+   <tr>   
+    <td>1</td>   
+    <td>Ayush</td>   
+    <td>1</td>
+    <td>6780</td>  
+    </tr>   
+    <tr>   
+    <td>2</td>   
+    <td>Shivangi</td>   
+    <td>2</td>   
+    <td>890 </td>   
+    </tr>  
+    <tr>   
+    <td>3</td>   
+    <td>Harsh</td>   
+    <td>3</td>   
+    <td>562 </td>
+    </tr> 
+   </table>
+   </div>
+
+  </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
