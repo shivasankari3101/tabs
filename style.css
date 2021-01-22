@@ -79,14 +79,14 @@ body,html{
     
 /* players_tab */
 
-   table{
+   .players_tab table{
     width: 100%;   
    }
-   td , th{
+   .players_tab td ,.players_tab th{
     padding: 1%;
     text-align: center;
     }
-   th{
+    .players_tab th{
     background-color: #d0f224;
     font-family: 'Open Sans',Sans-serif;
     font-weight: 200;
@@ -94,26 +94,26 @@ body,html{
     font-weight: bolder;
    
    }
-   tr{
+   .players_tab tr{
     width: 100%;
     background-color: #fafafa;
     font-family: 'Montserrat', sans-serif;
    }
-   tr:nth-child(even){
+   .players_tab tr:nth-child(even){
     background-color: #eeeeee;
    }
    
    
    /* search bar */
    
-   .search {
+   .players_tab .search {
      width: 30%;
      position: relative;
      display: grid;
      grid-template-columns: 80% 20%;
    }
    
-    .searchTerm {
+   .players_tab .searchTerm {
      border: none;
      border-right: none;
      padding: 3%;
@@ -122,11 +122,11 @@ body,html{
      color: #9DBFAF;
    }
    
-   .searchTerm:focus{
+   .players_tab .searchTerm:focus{
      color: #00B4CC;
    }
    
-   .searchButton {
+   .players_tab .searchButton {
        border: none;
        outline: none;
      background: #f5f5f5;
@@ -138,7 +138,7 @@ body,html{
    } 
    
    /*Resize the wrap to see the search bar change!*/
-   .wrap{
+   .players_tab .wrap{
      display: flex;
      justify-content: flex-end;
      align-items: center;
@@ -171,9 +171,43 @@ body,html{
 
 @media screen and (max-width:340px){
 
-    tr,th{
+    .players_tab tr, .players_tab th{
       font-size: 0.7rem;    
     }
 }
 
+
+/* summary_tab */
+.summary_tab{
+    text-align: center;
+    font-weight: bolder;
+}
+.summary_tab .winner{
+    text-align: center;
+    font-weight: bolder;
+}
+.summary_tab .file{
+    margin-top: 70px;
+    width: 70%;
+}
+.summary_tab .progress-bar{
+    background-color: #d0f224;
+    color: black;
+}
+
+.summary_tab #img{
+    width: 80%;
+}
+.summary_tab td{
+    font-weight: bold;
+}
+
+/*-----Media Query---------*/
+@media screen and (max-width: 600px) {
+    .summary_tab .file{
+        margin-top: 5px;
+        width: 80%;
+    }
+  }
+/* summary_tab */
 
