@@ -77,7 +77,41 @@ body{
 .main_div>div:nth-child(1){transform: translateX(0);}
 .main_div>div:nth-child(2){transform: translateX(100%);}
 .main_div>div:nth-child(3){transform: translateX(200%);}
-    
+/* summary_tab */
+.summary_tab{
+    text-align: center;
+    font-weight: bolder;
+    height: fit-content;
+}
+.summary_tab .winner{
+    text-align: center;
+    font-weight: bolder;
+}
+.summary_tab .file{
+    margin-top: 70px;
+    width: 70%;
+}
+.summary_tab .progress-bar{
+    background-color: #d0f224;
+    color: black;
+}
+
+.summary_tab #img{
+    width: 80%;
+}
+.summary_tab td{
+    font-weight: bold;
+}
+
+/*-----Media Query---------*/
+@media screen and (max-width: 600px) {
+    .summary_tab .file{
+        margin-top: 5px;
+        width: 80%;
+    }
+  }
+/* summary_tab */
+  
 /* players_tab */
 
    .players_tab table{
@@ -166,7 +200,7 @@ body{
 
    }
 
-/* players_tab */
+
 
 @media screen and (max-width:340px){
 
@@ -174,40 +208,6 @@ body{
       font-size: 0.7rem;    
     }
 }
+/* players_tab */
 
-
-/* summary_tab */
-.summary_tab{
-    text-align: center;
-    font-weight: bolder;
-    height: fit-content;
-}
-.summary_tab .winner{
-    text-align: center;
-    font-weight: bolder;
-}
-.summary_tab .file{
-    margin-top: 70px;
-    width: 70%;
-}
-.summary_tab .progress-bar{
-    background-color: #d0f224;
-    color: black;
-}
-
-.summary_tab #img{
-    width: 80%;
-}
-.summary_tab td{
-    font-weight: bold;
-}
-
-/*-----Media Query---------*/
-@media screen and (max-width: 600px) {
-    .summary_tab .file{
-        margin-top: 5px;
-        width: 80%;
-    }
-  }
-/* summary_tab */
 
