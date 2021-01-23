@@ -169,11 +169,12 @@ body {
     right: 0px;
     position: fixed;
     right: 0vh;
-    width: 40%;
+    width: 30%;
     border-radius:10px 0 0 10px;
 }
 
 .header_questions_tab input {
+    width: 100%;
     padding: 1%;
     border-radius: 10px;
     font-weight: 600;
@@ -182,8 +183,7 @@ body {
     background: none;
     border: none;
     background-color: white;
-    /* border: 1px solid black; */
-    color: black;
+    color: rgba(0,0,0,0.7);
     
 }
 
@@ -192,7 +192,7 @@ body {
     max-width: 200px;
     font-size: 16px;
     padding: 0px 15px;
-    color: black;
+    color: rgba(0,0,0,0.3);
 }
 
 .body {
@@ -236,7 +236,7 @@ td {
     background: #ebebeb;
 }
 
-.body .inner-body .col-12 table tr:nth-child(1) {
+.body .inner-body .col-12 table thead tr:nth-child(1) {
     background: #d0f224;
     padding: 10px 10px;
     color: black;
@@ -252,16 +252,60 @@ th {
 }
 
 @media screen and (max-width:576px){
-    .body .inner-body .col-12 table tr:nth-child(1) {
-        background: #d0f224;
-        padding: 1% 1%;
+    .body .inner-body .col-12{
+        padding: 0;
     }
 
-    .body .inner-body .col-12 table,
-tr,
-td {
-    font-size: 40%;
-}
+   .right-side-header{
+       width: 50%;
+   }
+
+   .body .inner-body .col-12 table tr:nth-child(odd) {
+    background: #f5f5f5;
+   }
+
+   .body .inner-body .col-12 table {
+    border: 0;
+  }
+
+  .body .inner-body .col-12 table caption {
+    font-size: 1.3rem;
+  }
+  
+  .body .inner-body .col-12 table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  .body .inner-body .col-12 table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin:15px auto 15px auto;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+  }
+  
+  .body .inner-body .col-12 table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 1rem;
+    text-align: right;
+  }
+  
+  .body .inner-body .col-12 table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+  
+  .body .inner-body .col-12 table td:last-child {
+    border-bottom: 0;
+  }
 }
 /* Questions tab */
   
