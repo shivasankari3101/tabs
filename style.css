@@ -287,7 +287,7 @@ th {
     border-bottom: 3px solid #ddd;
     display: block;
     margin:15px auto 15px auto;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
   }
   
   .body .inner-body .col-12 table td {
