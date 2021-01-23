@@ -260,9 +260,6 @@ th {
        width: 50%;
    }
 
-   .body .inner-body .col-12 table tr:nth-child(odd) {
-    background: #f5f5f5;
-   }
 
    .body .inner-body .col-12 table {
     border: 0;
